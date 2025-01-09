@@ -94,6 +94,33 @@ $ git commit --amend -m "style: change commit message"
 
 ---
 #### 14. add 3 commit to 4th branch and delete last commit.
+```js
+$ git add .
+$ git commit -m 'feat: create img folder and added images'
+
+$ git add style.css
+$ git commit -m 'feat: update stylesheet'
+
+$ git add text.txt
+$ git commit -m 'docs: create text.txt'
+
+$ git log
+commit 7e563dbfb4f55302319c1720b415cea1c776810a (HEAD -> feature_4)
+Author: darshan-sim <darshan.chaudhary@simformsolutions.com>
+Date:   Thu Jan 9 20:01:05 2025 +0530
+
+    docs: create text.txt
+
+
+$ git reset --hard HEAD~1
+HEAD is now at 0f05287 feat: update stylesheet
+$ git log
+commit 0f05287e91d722fd2693eafbd2638df7730e22f0 (HEAD -> feature_4)
+Author: darshan-sim <darshan.chaudhary@simformsolutions.com>
+Date:   Thu Jan 9 20:00:19 2025 +0530
+
+    feat: update stylesheet
+```
 
 
 
