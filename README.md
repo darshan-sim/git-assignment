@@ -80,13 +80,21 @@ Date:   Thu Jan 9 19:38:51 2025 +0530
 
 ---
 #### 12. Cherry pick 3rd branch's commit to 4th branch. 
-
+```js
+$ git checkout feature_4
+$ git cherry-pick 8d4b59620f865b1a0810026b4c07c4e71fbbce23
+$ git commit -m 'cherry-pick: cherry-pick from feature_3 to feature_4'
+```
 
 ---
 #### 13. Change commit message in 4th branch
-
+```js
+$ git commit --amend -m "style: change commit message"
+```
 
 ---
 #### 14. add 3 commit to 4th branch and delete last commit.
+
+
 
 
