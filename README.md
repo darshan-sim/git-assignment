@@ -11,6 +11,10 @@ $ git checkout -b feature_1
 ---
 
 #### 2. Add a commit message hook to the repo.
+- Hooks are in .git/hooks/ 
+- To enable them remove .sample after each hook.
+- Hook are scripts that execute based on their type( pre/post/at-time)
+
 
 ---
 #### 3. Perform multiple commits in the new branch
